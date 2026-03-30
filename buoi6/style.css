@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Circle icon */
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* First card */
+.card.pink {
+    border: 2px solid #f8a5c2;
+}
+
+.card.pink .circle {
+    background: #ff6b9a;
+}
+
+.card.pink button {
+    background: #ffd6e3;
+    color: #ff6b9a;
+}
+
+/* Second card */
+.card.blue {
+    border: 2px solid #a5c9f8;
+}
+
+.card.blue .circle {
+    background: #5da9ff;
+}
+
+.card.blue button {
+    background: #d6e8ff;
+    color: #5da9ff;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}

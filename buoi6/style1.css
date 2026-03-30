@@ -1,0 +1,13 @@
+#div1{
+    background-color: pink;
+border:2;
+width: 40%;
+}
+#div2{
+    background-color: blue;
+    border: 2;
+    width: 40%;
+}
+#div3{
+    box-align: center;
+}

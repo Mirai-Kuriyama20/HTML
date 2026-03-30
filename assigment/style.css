@@ -1,0 +1,78 @@
+#background{
+    background-image: url(img/couple3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#h1{
+    color: #bbb819;
+}
+#p1{
+    color: rgb(85, 85, 168);
+}
+#button1{
+    font-size: 30px;
+    background-color: rgb(62, 62, 216);
+    color: gray;
+    
+}
+#h1na{
+    text-align: left;
+}
+#nav1 ul{
+  list-style-type: none;
+  background-color: rgb(97, 97, 145);
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+#nav1 a{
+    color: white;
+    padding: 15px;
+    display:block;
+    text-align : center;
+}
+#nav1 a:hover{
+ background-color:#975008;
+}
+#nav1 li{
+    float :left;
+}
+#background2{
+    background-image: url(img/liz2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#gallery{
+    display : inline-block;
+    border: 2px solid blue;
+    margin: 5px;
+}
+#yuri1{
+    padding: 10px;
+    text-align: center;
+}
+#gallery:hover{
+    border: 1px solid yellow;
+}
+#seiyuu{
+    display : inline-block;
+    
+}
+#product{
+    display: inline-block;
+}
+#img1{
+    width: px;
+}
+#service{
+    display: inline-block;
+}
+#fontfamily{
+    font-family: sans-serif;
+    color: brown;
+}
