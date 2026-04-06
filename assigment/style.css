@@ -1,78 +1,167 @@
-#background{
-    background-image: url(img/couple3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+#background {
+  background-image: url(img/couple3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-#h1{
-    color: #bbb819;
+#h1 {
+  color: #bbb819;
+
 }
-#p1{
-    color: rgb(85, 85, 168);
+#p1 {
+  color: rgb(85, 85, 168);
 }
-#button1{
-    font-size: 30px;
-    background-color: rgb(62, 62, 216);
-    color: gray;
-    
+#button1 {
+  font-size: 30px;
+  background-color: rgb(62, 62, 216);
+  color: gray;
 }
-#h1na{
-    text-align: left;
+#button1:hover {
+  background-color: yellowgreen;
+  color: gray;
 }
-#nav1 ul{
+#h1na {
+  text-align: center;
+}
+#nav1 ul {
   list-style-type: none;
   background-color: rgb(97, 97, 145);
-  width: 50%;
+  width: 100%;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
 }
-#nav1 a{
-    color: white;
-    padding: 15px;
-    display:block;
-    text-align : center;
+#nav1 a {
+  color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
 }
-#nav1 a:hover{
- background-color:#975008;
+#nav1 a:hover {
+  background-color: #975008;
+  animation:colorChange;
+  animation-duration:4s;
+ animation-iteration-count: infinite;
 }
-#nav1 li{
-    float :left;
+#nav1 li {
+  float: left;
 }
-#background2{
-    background-image: url(img/liz2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+#background2 {
+  background-image: url(img/liz2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-#gallery{
-    display : inline-block;
-    border: 2px solid blue;
-    margin: 5px;
+#gallery {
+  display: inline-block;
+  border: 2px solid blue;
+  margin: 5px;
 }
-#yuri1{
-    padding: 10px;
-    text-align: center;
+#yuri1 {
+  padding: 10px;
+  text-align: center;
 }
-#gallery:hover{
-    border: 1px solid yellow;
+#gallery:hover {
+  border: 1px solid yellow;
 }
-#seiyuu{
-    display : inline-block;
-    
+#seiyuu {
+  display: inline-block;
 }
-#product{
-    display: inline-block;
+#product {
+  display: inline-block;
 }
-#img1{
-    width: px;
+#img1 {
+  width: px;
 }
-#service{
-    display: inline-block;
+#service {
+  display: inline-block;
 }
-#fontfamily{
-    font-family: sans-serif;
-    color: brown;
+#fontfamily {
+  font-family: sans-serif;
+  color: brown;
+}
+#feature {
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#sign_in {
+  background-image: url(img/sign\ up.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#form1 {
+  text-align: center;
+}
+#button_signIn {
+  border-radius: 4px;
+  background-color: brown;
+}
+#button_signIn:hover {
+  background-color: purple;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+p::selection{
+  background-color: blue;
+  color: white;
+}
+h1::selection{
+  background-color: yellow;
+  color: burlywood;
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+}
+.icon{
+  text-align: right;
+  margin-top: -150px;
+}
+
+.icon .fa-brands.fa-x-twitter.fa-3x {
+  margin-right: 20px;
+  color: black;
+}
+.icon .fa-brands.fa-x-twitter.fa-3x:hover{
+  color: yellowgreen;
+}
+.icon .fa-brands.fa-youtube.fa-3x {
+  margin-right: 20px;
+  color:rgb(231, 5, 5);
+}
+.icon .fa-brands.fa-youtube.fa-3x:hover{
+  color: yellowgreen;
+}
+.icon .fa-brands.fa-tiktok.fa-3x {
+  margin-right: 20px;
+  color: white;
+  text-shadow: 3px 3px 5px rgb(255, 0, 80),3px 3px 3px rgb(0, 242, 234),3px 3px 2px black;
+}
+.icon .fa-brands.fa-tiktok.fa-3x:hover{
+  color: yellowgreen;
+}
+#iconna{
+  margin-top: -120px;
+}
+#iconsi{
+  margin-top: -125px;
+}
+@keyframes colorChange{
+    0%{background-color: hsl(0, 100%, 62%)}
+    20%{background-color: hsl(35, 100%, 62%)}
+    40%{background-color: hsl(63, 100%, 62%)}
+    60%{background-color: hsl(103, 100%, 62%)}
+    80%{background-color: hsl(201, 100%, 62%)}
+    100%{background-color: hsl(268, 100%, 62%)}
 }
