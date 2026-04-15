@@ -1,30 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/248d263b84.js" crossorigin="anonymous"></script>
-</head>
-<body id="sign_in">
-    <h1 align="center">Sign Up</h1>
-    <form id="form1">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit" id="button_signIn">Sign Up</button>
-        <a href="navigation.html"><button id="button_signIn" type="button">Sign In</button></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Sound Euphonium</title>
+    <meta
+      name="description"
+      content="Sign up to join the Sound Euphonium community."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/248d263b84.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="sign_in">
+    <nav id="nav1">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="banner.html" target="_blank">Banner</a></li>
+        <li><a href="feature.html" target="_blank">Features</a></li>
+        <li>
+          <a
+            href="https://myanimelist.net/anime/27989/Hibike_Euphonium"
+            target="_blank"
+            >About
+          </a>
+        </li>
+        <li><a href="product.html" target="_blank">Products</a></li>
+        <li><a href="service.html" target="_blank">Service</a></li>
+        <li><a href="https://anime-eupho.com/" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Sign Up</h1>
+    <form id="form1" action="#" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="6"
+      />
+      <br />
+      <button type="submit" id="button_signIn">Sign Up</button>
+      <a href="navigation.html"
+        ><button id="button_signIn" type="button">Sign In</button></a
+      >
     </form>
-    <div class="icon" id="iconsi">
-          <a href="https://x.com/anime_eupho" target="_blank"><i class="fa-brands fa-x-twitter fa-3x" ></i></a>
-          <a href="https://www.youtube.com/watch?v=DYHQxWo-8YI" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
-          <a href="https://www.tiktok.com/@anime_eupho" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
-    </div>
-           
-
-</body>
+    <footer class="icon" id="iconsi">
+      <a href="https://x.com/anime_eupho" target="_blank" aria-label="Twitter"
+        ><i class="fa-brands fa-x-twitter fa-3x"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/watch?v=DYHQxWo-8YI"
+        target="_blank"
+        aria-label="YouTube"
+        ><i class="fa-brands fa-youtube fa-3x"></i
+      ></a>
+      <a
+        href="https://www.tiktok.com/@anime_eupho"
+        target="_blank"
+        aria-label="TikTok"
+        ><i class="fa-brands fa-tiktok fa-3x"></i
+      ></a>
+    </footer>
+    <script>
+      document
+        .getElementById("form1")
+        .addEventListener("submit", function (event) {
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          if (username.length < 3) {
+            alert("Username must be at least 3 characters long.");
+            event.preventDefault();
+          }
+          if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            event.preventDefault();
+          }
+        });
+    </script>
+  </body>
 </html>

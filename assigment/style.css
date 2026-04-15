@@ -1,52 +1,136 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+}
+
 #background {
   background-image: url(img/couple3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
 #h1 {
   color: #bbb819;
-
+  font-size: 3em;
+  margin-bottom: 10px;
 }
+
 #p1 {
   color: rgb(85, 85, 168);
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
+
 #button1 {
   font-size: 30px;
   background-color: rgb(62, 62, 216);
-  color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
 #button1:hover {
   background-color: yellowgreen;
-  color: gray;
+  color: white;
+}
+
+footer.icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.icon a {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.icon .fa-brands.fa-x-twitter.fa-3x {
+  color: black;
+}
+
+.icon .fa-brands.fa-x-twitter.fa-3x:hover {
+  color: yellowgreen;
+}
+
+.icon .fa-brands.fa-youtube.fa-3x {
+  color: rgb(231, 5, 5);
+}
+
+.icon .fa-brands.fa-youtube.fa-3x:hover {
+  color: yellowgreen;
+}
+
+.icon .fa-brands.fa-tiktok.fa-3x {
+  color: white;
+  text-shadow:
+    3px 3px 5px rgb(255, 0, 80),
+    3px 3px 3px rgb(0, 242, 234),
+    3px 3px 2px black;
+}
+
+.icon .fa-brands.fa-tiktok.fa-3x:hover {
+  color: yellowgreen;
 }
 #h1na {
   text-align: center;
   color: white;
+  padding: 20px;
 }
+
 #nav1 ul {
   list-style-type: none;
-  background-color: rgb(97, 97, 145);
+  background-color: rgba(97, 97, 145, 0.9);
   width: 100%;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
+
 #nav1 a {
   color: white;
   padding: 15px;
   display: block;
   text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
+
 #nav1 a:hover {
   background-color: #975008;
-  animation:colorChange;
-  animation-duration:4s;
- animation-iteration-count: infinite;
+  animation: colorChange 4s infinite;
 }
+
 #nav1 li {
-  float: left;
+  flex: 1;
+  max-width: 150px;
 }
 #background2 {
   background-image: url(img/liz2.jpg);
@@ -54,48 +138,29 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
 }
-#gallery {
-  display: inline-block;
-  border: 2px solid blue;
-  margin: 5px;
-}
-#yuri1 {
-  padding: 10px;
-  text-align: center;
-}
-#gallery:hover {
-  border: 1px solid yellow;
-}
-#seiyuu {
-  display: inline-block;
-}
-#product {
-  display: inline-block;
-}
-#img1 {
-  width: px;
-}
-#service {
-  display: inline-block;
-}
-#fontfamily {
-  font-family: sans-serif;
-  color: brown;
-}
+
 #feature {
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
 }
+
 #sign_in {
   background-image: url(img/sign\ up.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #form1 {
   text-align: center;
@@ -111,61 +176,194 @@
   display: flex;
   justify-content: center;
 }
-p::selection{
+p::selection {
   background-color: blue;
   color: white;
 }
-h1::selection{
+h1::selection {
   background-color: yellow;
   color: burlywood;
 }
-h1{
-  font-family: 'Times New Roman', Times, serif;
-}
-p{
-  font-family: 'Times New Roman', Times, serif;
-}
-.icon{
-  text-align: right;
-  margin-top: -150px;
+
+@keyframes colorChange {
+  0% {
+    background-color: hsl(0, 100%, 62%);
+  }
+  20% {
+    background-color: hsl(35, 100%, 62%);
+  }
+  40% {
+    background-color: hsl(63, 100%, 62%);
+  }
+  60% {
+    background-color: hsl(103, 100%, 62%);
+  }
+  80% {
+    background-color: hsl(201, 100%, 62%);
+  }
+  100% {
+    background-color: hsl(268, 100%, 62%);
+  }
 }
 
-.icon .fa-brands.fa-x-twitter.fa-3x {
-  margin-right: 20px;
-  color: black;
+/* Gallery styles */
+#gallery {
+  display: inline-block;
+  border: 2px solid blue;
+  margin: 10px;
+  transition: border 0.3s;
 }
-.icon .fa-brands.fa-x-twitter.fa-3x:hover{
-  color: yellowgreen;
+
+#gallery img {
+  width: 300px;
+  height: auto;
+  display: block;
 }
-.icon .fa-brands.fa-youtube.fa-3x {
-  margin-right: 20px;
-  color:rgb(231, 5, 5);
+
+#yuri1 {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-.icon .fa-brands.fa-youtube.fa-3x:hover{
-  color: yellowgreen;
+
+#gallery:hover {
+  border: 2px solid yellow;
 }
-.icon .fa-brands.fa-tiktok.fa-3x {
-  margin-right: 20px;
+
+/* Seiyuu styles */
+#seiyuu {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+#seiyuu h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#seiyuu h2 {
+  color: #333;
+  margin-top: 20px;
+}
+
+#seiyuu p {
+  margin-bottom: 10px;
+}
+
+/* Product styles */
+#product {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+#product img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#product #yuri1 {
+  margin-top: 10px;
+}
+
+/* Service styles */
+#service {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#service h1 {
+  margin-bottom: 20px;
+}
+
+#img1 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#fontfamily {
+  font-family: sans-serif;
+  color: brown;
+  margin: 20px 0;
+}
+
+#service iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+}
+
+/* Form styles */
+#form1 {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form1 label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#form1 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#button_signIn {
+  background-color: brown;
   color: white;
-  text-shadow: 3px 3px 5px rgb(255, 0, 80),3px 3px 3px rgb(0, 242, 234),3px 3px 2px black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
 }
-.icon .fa-brands.fa-tiktok.fa-3x:hover{
-  color: yellowgreen;
+
+#button_signIn:hover {
+  background-color: purple;
 }
-#iconna{
-  margin-top: -120px;
-}
-#iconsi{
-  margin-top: -125px;
-}
-@keyframes colorChange{
-    0%{background-color: hsl(0, 100%, 62%)}
-    20%{background-color: hsl(35, 100%, 62%)}
-    40%{background-color: hsl(63, 100%, 62%)}
-    60%{background-color: hsl(103, 100%, 62%)}
-    80%{background-color: hsl(201, 100%, 62%)}
-    100%{background-color: hsl(268, 100%, 62%)}
-}
-@keyframes picture {
-  
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #h1 {
+    font-size: 2em;
+  }
+  #p1 {
+    font-size: 1.2em;
+  }
+  #button1 {
+    font-size: 20px;
+  }
+  #nav1 li {
+    flex: none;
+    width: 100%;
+  }
+  #gallery img,
+  #product img {
+    width: 100%;
+    max-width: 300px;
+  }
+  footer.icon {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
