@@ -1,27 +1,106 @@
-header{
-    background-color: rgb(84, 68, 80);
-    width: 90%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#img1{
-    align-self: center;
+header {
+  width: 1000px;
+  height: 100px;
+  background-color: rgb(25, 25, 189);
+  margin: 1rem auto;
 }
-#div1{
+.logo {
+  margin: 30px 20px;
+}
+.navbar ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+   margin-top: -79px;
+   margin-right: 500px;
+   list-style-type: none;
+   gap: 20px;
 }
-footer{
-    background-color: black;
-}
-#name{
+a{
+    text-decoration: none;
     color: white;
+    padding:20px 20px;    
+}
+a:hover{
+    background-color: yellow;
+}
+.hero,main,footer{
+  width: 1000px;
+  height: 100px;
+  margin: 1rem auto;
+}
+.hero img{
+    margin-top: 40px;
+}
+.title{
+    text-transform: uppercase;
+    margin-top: 610px;
+    margin-bottom: 40px;
+    text-align: center;   
+}
+.clother{
+    width: 1000px;
+    height: 100px;
+    margin: 1rem auto;
+    display: inline-block;  
+    
+}
+.set1,.set2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    padding: 10px 10px;
+}
+article{
     text-align: center;
+    width: 300px;
+    height: 280px;
+    border: 2px burlywood solid;
+    background:rgb(158, 156, 156); 
 }
-#hover:hover{
-    background-color: rgb(140, 248, 8);
-  border: 2px solid black;
+article:hover{
+    background: white;
 }
-p{
-    color: white; 
-    font-size: larger;
+article p{
+    text-transform: uppercase;
+    color: burlywood;
 }
+article p b{
+    color: gray;
+}
+.shoe p{
+    padding: 55px 10px;
+}
+.shoe img{
+    padding-top: 40px;
+}
+.search-bar{
+background-color: gray;
+height: 60px;
+margin-top: 660px;
+text-align: center;
+padding-top:20px ;    
+}
+input[type="text"]{
+  border: 1px rgb(31, 30, 30) solid;
+  border-radius: 20px;
+  padding: 3px 10px; 
+}
+button{
+  border: 1px rgb(31, 30, 30) solid;
+  border-radius: 20px;
+  padding: 4px;
+}
+.name{
+text-align: center;
+background: rgb(43, 40, 40);
+height: 120px;
+color: white;
+padding-top: 60px ;
+}
+

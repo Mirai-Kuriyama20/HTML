@@ -1,0 +1,27 @@
+header{
+    background-color: rgb(84, 68, 80);
+    width: 90%;
+}
+#img1{
+    align-self: center;
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer{
+    background-color: black;
+}
+#name{
+    color: white;
+    text-align: center;
+}
+#hover:hover{
+    background-color: rgb(140, 248, 8);
+  border: 2px solid black;
+}
+p{
+    color: white; 
+    font-size: larger;
+}
