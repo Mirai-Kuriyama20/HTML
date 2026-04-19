@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  width: auto;
+  height: 100px;
+  background-color: aliceblue;
+}
+.background img {
+  display: inline-block;
+}
+nav {
+  display: inline-block;
+}
+nav ul {
+  padding: 2px 20px;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+a:hover {
+  color: brown;
+}
+.input {
+  display: inline-block;
+  padding-left: 700px;
+}
+.input button {
+  background-color: grey;
+  color: white;
+  width: 70px;
+  height: 20px;
+  cursor: pointer;
+}
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+div p {
+  text-transform: uppercase;
+}
+main .box {
+  width: 300px;
+  height: 120px;
+  text-align: center;
+  padding: 60px 30px;
+}
+#box1 {
+  background-color: bisque;
+}
+#box1:hover {
+  background-color: orangered;
+}
+#box2 {
+  background-color: rgb(114, 109, 101);
+}
+#box2:hover {
+  background-color: orange;
+}
+#box3 {
+  background-color: rgb(141, 123, 95);
+}
+#box3:hover {
+  background-color: orchid;
+}
+section {
+  width: 100%;
+  margin-top: 20px;
+}
+h2 {
+  display: block;
+  color: rgb(168, 132, 77);
+  text-align: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section article p{
+text-transform: uppercase;
+color: bisque;
+}
+section article{
+    margin: 60px 70px;
+    display: inline-block;
+    text-align: center;    
+}
+footer {
+border-top: 1px black solid ;
+padding-top: 10px;
+}
+footer p{
+    display: flex;
+    justify-content: flex-end;
+}
