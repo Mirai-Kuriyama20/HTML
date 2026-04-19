@@ -1,0 +1,91 @@
+ul{
+    list-style-type: none;
+    margin-top: -6px;
+}
+.navbar li{
+display:inline-block;
+padding: 16px;
+}
+.navbar a{
+    text-decoration: none;
+}
+header{
+    background-color: wheat;
+    height: 40px;
+    margin-top: -16px;
+}
+.navbar{
+    display: flex;
+
+}
+.logo{
+    width: 90px;
+    height: 40px;
+}
+.email{
+    display: flex;
+    margin-left: 1250px;
+    justify-content: center;
+}
+.email{
+    margin-top: -50px;
+}
+#contact-us{
+    background-color: black;
+    color: white;
+}
+.box1{
+    width: 250px;
+    height:70px;
+    background-color: bisque;
+    text-align: center;
+    padding-top: 60px;
+}
+.box2{
+    width: 250px;
+    height:70px;
+    background-color: rgb(152, 102, 40);
+    text-align: center;
+    padding-top: 60px;
+    margin-left: -270px;
+}
+.box3{
+    width: 250px;
+    height:70px;
+    background-color: rgb(153, 128, 98);
+    text-align: center;
+    padding-top: 60px;
+    margin-left: -270px;
+}
+.bigbox{
+    display: flex;
+    justify-content: center;
+}
+.bigbox{
+    justify-content: space-evenly;
+}
+.title-open{
+    text-transform: uppercase;
+    color: rgb(221, 134, 19);
+    display: flex;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+figure{
+    display: inline-block;
+}
+figure p{
+    text-transform: uppercase;
+    color: burlywood;
+}
+footer{
+ border-top:2px solid black;  
+}
+footer p{
+    text-align: right;
+    color: rgb(154, 118, 65);
+    margin-top:-40px ;
+}

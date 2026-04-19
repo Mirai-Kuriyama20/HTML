@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.background-logo {
+  background-color: rgb(129, 129, 205);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 100px;
+  margin-top: -4px;
+}
+nav ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+nav {
+  justify-content: space-between;
+  display: flex;
+  padding: 15px 30px;
+  align-items: center;
+  background-color: rgb(74, 74, 105);
+  height: 40px;
+}
+nav li {
+  margin-right: 100px;
+}
+a:hover {
+  background-color: burlywood;
+}
+a{
+  display: block;
+}
+div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-top: 10px;
+}
+.search {
+  background-color: rgb(34, 34, 109);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Add space between elements */
+}
+input {
+  width: 1000px;
+  height: 30px;
+  margin: 1rem auto;
+}
+.search button {
+  background-color: orange;
+  color: white;
+  height: 30px;
+  outline: 1px solid white;
+  outline-offset: -3px;
+}
+article {
+  border: 2px orange solid;
+  width: 420px;
+  height: 400px;
+}
+main {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}
+.bigpost{
+ width: 1300px;
+ display: flex;
+ justify-content: center;
+ margin-left: 200px;
+}
+footer{
+    background-color: aqua;
+    width: 300px;
+}

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: orange;
+  width: 2000px;
+  height: 100px;
+}
+header img {
+  margin-top: 10px;
+}
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 86px;
+  margin-top: -40px;
+}
+.findbutton {
+  background-color: blue;
+  color: white;
+  height: 30px;
+  width: 90px;
+  outline: 1px solid white;
+}
+.search-bar input {
+  width: 300px;
+}
+nav {
+  margin-top: 37px;
+  background-color: blue;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+nav ul li a:hover {
+  background-color: lightblue;
+  color: black;
+}
+h1{
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+section{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+}
+article{
+    border: 1px solid black;
+    width: 400px;
+}
+article h2{
+    color: orangered;
+}
+article img{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.poster{
+    border: none;
+}
+.sponser div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px dotted black;
+}
+ h3{
+    margin-top: 40px;
+  font-size: larger;
+  color: rgb(57, 57, 155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+footer{
+    display: flex;
+    background-color: orangered;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 40px;
+}
