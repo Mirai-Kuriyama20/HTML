@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header,main,footer{
+    width: 1150px;
+    height: 100px;
+    margin: 1rem auto;
+}
+.background{
+    width: 100%;
+    height: 103%;
+    background-color: orange;
+}
+.background img{
+    padding: 14px 10px;
+}
+.input{
+    margin-top: -60px;
+    margin-left: 400px;
+}
+.background input{
+    margin-left: 450px;
+    padding: 3px 10px;
+}
+.background button{
+    width: 90px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px white solid;
+}
+button:hover{
+    background-color: cyan;
+}
+.backnav{
+    margin-top: 10px;
+    width: 100%;
+    height: 53%;
+    background-color: rgb(26, 40, 172);
+}
+nav ul li{
+    margin-top: 16px;
+}
+nav ul{
+    margin-top:20px ;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap:30px;
+}
+nav ul li a{
+    padding:10px 20px ;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: brown;
+}
+main h2{
+    margin-top: 100px;
+    color: rgb(51, 51, 136);
+    text-transform: uppercase;
+}
+h3{
+    color: brown;
+}
+.poster1{
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px black solid;
+    width: 400px;
+    
+}
+#poster2{
+    border: none;
+    margin-left: 760px;
+    margin-top: -600px;
+}
+section h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.logo{
+    border: 1px black dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+footer .background{
+    margin-top: 1000px;
+}
+footer div h2{
+    color: white;
+    text-align: center;
+    padding: 41px 39px;
+    text-transform: uppercase;
+}

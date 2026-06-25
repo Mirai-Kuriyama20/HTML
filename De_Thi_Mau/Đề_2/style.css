@@ -1,206 +1,111 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    line-height: 1.5;
-    background-color: #f0f0f0;
+header,main, footer{
+    width: 1000px;
+    height: 100px;
+    margin: 1rem auto;
 }
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.background{
+    width: 1000px;
+    height: 100px;
+    background: rgb(140, 207, 39);
+    margin: 1rem auto;
+     
 }
-
-/* Header */
-header {
+img:hover{
+    box-shadow: red 10px 10px 12px, blue -10px -10px 12px;
+}
+.background img{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #437c17;
-    padding: 15px 20px;
+    justify-content: flex-start;
 }
-
-.logo img {
-    height: 60px;
-}
-
-.menu ul {
-    list-style: none;
+.background ul{
     display: flex;
-    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+     margin-top: -40px;
 }
-
-.menu ul li a {
+a{
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
-    transition: color 0.3s, text-decoration 0.3s;
+    padding: 20px 20px;
+    margin-left: -20px;
+    color: white;
 }
-
-.menu ul li a:hover,
-.menu ul li a.active {
-    color: #ffeb3b;     /* Change to yellow on hover */
-    text-decoration: underline;
+a:hover{
+    background: yellow;
 }
-
-.search-form form {
+.input{
     display: flex;
-    align-items: center;
-    position: relative;
+    justify-content: flex-end;
+    margin-top:-13px;
 }
-
-.search-form input[type="text"] {
-    padding: 10px 12px;
-    border: none;
-    outline: none;
-    width: 220px;
+.input button{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.search-form button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-}
-
-.search-form button:hover {
-    background-color: #333;
-}
-
-.error-msg {
-    color: #ffaaaa;
-    font-size: 13px;
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-    display: none;
-}
-
-/* Banner */
-.banner {
+.hero img{
     width: 100%;
 }
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    outline: 1px solid transparent;
+.title h2{
+    color: rgb(73, 133, 113);
+    margin-top: 460px;
 }
-
-/* Main Content */
-.content {
+section{
+    width: 1000px;
+    height: 450px;
+    background-color: blanchedalmond;
+}
+.article1 img{
+    float:left;
+    width: 350px;
+    margin-right: 20px;
+    padding: 30px 30px;
+}
+ h3{
+    color: rgb(36, 36, 131);
     padding: 30px;
 }
-
-.section-title {
-    color: #0b5394;
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+ p{
+    font-weight:bolder;
 }
-
-.news-container {
-    background-color: #fff2cc;
-    padding: 25px;
-}
-
-/* Row 1 Content: ADM */
-.post-row {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.post-row .post-image {
-    flex: 0 0 50%;
-}
-
-.post-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    outline: 1px solid transparent;
-    transition: outline 0.2s;
-}
-
-.post-image a {
-    display: block;
-}
-
-/* Yêu cầu đb: Hiệu ứng khi di chuột qua tất cả các ảnh content website thì xuất hiện đường viền 1px nét đứt màu đỏ (mã màu: #F00) */
-.content .post-image img:hover {
-    outline: 1px dashed #F00;
-}
-
-.post-row .post-text {
-    flex: 1;
-}
-
-.post-title {
-    font-size: 20px;
-    margin-bottom: 12px;
-    line-height: 1.4;
-}
-
-.post-title a {
-    text-decoration: none;
-    color: #0b5394;
-    transition: color 0.3s;
-}
-
-.post-title a:hover {
-    color: #F00;
-}
-
-.post-text p {
-    margin-bottom: 8px;
-    font-size: 15px;
-    color: #000;
-}
-
-/* Row 2 Content: Grid for Susu & Hero */
-.post-grid {
-    display: flex;
-    gap: 35px;
-}
-
-.post-col {
-    flex: 1;
-}
-
-.post-col .post-image {
-    margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-    background-color: #437c17;
-    padding: 25px 0;
-    color: #fff;
-}
-
-.footer-content {
-    background-color: transparent;
+.article2{
+    padding: 10px 10px;
+    margin-top: -280px;
     text-align: center;
+    width: 300px;
+    height: 200px;
+}
+.article2 img{
+    width: 300px;
+}
+.article2 h3{
+    padding: 0px;
+}
+.article2 p{
+    font-weight: 500;
 }
 
-.footer-text {
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
+#article3{
+    padding: 10px 10px;
+    margin-left: 500px;
+    margin-top: -125px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+footer .background{
+    background-color: rgb(32, 143, 32);
+    margin-top: 600px;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
 }
